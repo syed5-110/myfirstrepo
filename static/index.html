@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Restaurant POS</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div><h1>🍽️ Restaurant POS</h1><small>Waiter • Kitchen • Billing</small></div>
+  <nav>
+    <button class="tab active" onclick="show('waiter',this)">📱 Waiter</button>
+    <button class="tab" onclick="show('kitchen',this)">👨‍🍳 Kitchen</button>
+    <button class="tab" onclick="show('billing',this)">🧾 Billing</button>
+    <button class="tab" onclick="show('report',this)">📊 Day Report</button>
+    <button class="tab" onclick="show('menuManager',this)">⚙️ Menu</button>
+  </nav>
+</header>
+
+<main>
+<section id="waiter" class="page">
+  <div class="columns">
+    <div class="card">
+      <h2>Take Customer Order</h2>
+      <label>Waiter</label>
+      <input id="waiter" value="Waiter 1">
+      <h3>1. Select Table</h3>
+      <div id="tables" class="tables"></div>
+      <h3>2. Select Food</h3>
+      <div id="categories" class="categories"></div>
+      <div id="menu" class="menu"></div>
+    </div>
+    <div class="card orderbox">
+      <h2>Current Order <span id="tableTitle"></span></h2>
+      <div id="cart"><p class="muted">Select a table and add food.</p></div>
+      <div class="total">Total ₹<span id="total">0</span></div>
+      <button class="send" onclick="sendOrder()">SEND ORDER TO KITCHEN</button>
+      <button class="secondary" onclick="clearCart()">CLEAR ORDER</button>
+      <p id="message"></p>
+    </div>
+  </div>
+</section>
+
+<section id="kitchen" class="page hidden">
+  <div class="card"><h2>👨‍🍳 Kitchen Display <span class="live">● LIVE</span></h2><div id="kitchenOrders"></div></div>
+</section>
+
+<section id="billing" class="page hidden">
+  <div class="card"><h2>🧾 Billing Counter <span class="live">● LIVE</span></h2><div id="billingOrders"></div></div>
+</section>
+<section id="report" class="page hidden">
+  <div class="card report-card"><div class="report-title"><div><h2>📊 Day-end Report <span class="live">● LIVE</span></h2><p id="reportDate" class="muted"></p></div><button class="secondary report-print" onclick="window.print()">Print report</button></div><div id="reportContent"></div></div>
+</section>
+<section id="menuManager" class="page hidden">
+  <div class="card"><h2>⚙️ Menu Manager</h2><p class="muted">Add items, update prices, or pause items that are unavailable.</p><form class="menu-form" onsubmit="createMenuItem(event)"><input id="newItemName" placeholder="Item name" required><input id="newItemCategory" placeholder="Category" required><input id="newItemPrice" type="number" min="1" step="1" placeholder="Price (₹)" required><button class="primary" type="submit">Add item</button></form><div id="menuManagerList" class="manager-list"></div></div>
+</section>
+</main>
+<div id="receiptModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="receiptTitle">
+  <div class="receipt-card">
+    <button class="receipt-close" onclick="closeReceipt()" aria-label="Close receipt">×</button>
+    <div id="receipt"></div>
+    <div class="receipt-actions"><button onclick="closeReceipt()">Done</button><button class="primary" onclick="window.print()">Print receipt</button></div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
