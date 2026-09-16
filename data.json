@@ -1,0 +1,212 @@
+{
+  "tables": [
+    {
+      "id": 1,
+      "number": 1,
+      "status": "available"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "status": "available"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "status": "available"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "status": "available"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "status": "available"
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "status": "available"
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "status": "available"
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "status": "available"
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "status": "available"
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "status": "available"
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "status": "available"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "status": "available"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Chicken Alfaham Mandi - Full",
+      "category": "Arabian & Mandi",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "name": "Chicken Alfaham Mandi - Half",
+      "category": "Arabian & Mandi",
+      "price": 800
+    },
+    {
+      "id": 3,
+      "name": "Chicken Saway",
+      "category": "Arabian & Mandi",
+      "price": 800
+    },
+    {
+      "id": 4,
+      "name": "Duoza Special Mandi",
+      "category": "Arabian & Mandi",
+      "price": 4999
+    },
+    {
+      "id": 5,
+      "name": "Mutton Mandi - Full",
+      "category": "Arabian & Mandi",
+      "price": 1999
+    },
+    {
+      "id": 6,
+      "name": "Mutton Mandi - Half",
+      "category": "Arabian & Mandi",
+      "price": 1100
+    },
+    {
+      "id": 7,
+      "name": "Mutton Raan Mandi",
+      "category": "Arabian & Mandi",
+      "price": 2499
+    },
+    {
+      "id": 8,
+      "name": "Mutton Special Mandi",
+      "category": "Arabian & Mandi",
+      "price": 3999
+    },
+    {
+      "id": 9,
+      "name": "Chicken Biryani - Full",
+      "category": "Biryani",
+      "price": 399
+    },
+    {
+      "id": 10,
+      "name": "Chicken Biryani - Half",
+      "category": "Biryani",
+      "price": 199
+    },
+    {
+      "id": 11,
+      "name": "Chicken Dum Biryani - Full",
+      "category": "Biryani",
+      "price": 449
+    },
+    {
+      "id": 12,
+      "name": "Chicken Dum Biryani - Half",
+      "category": "Biryani",
+      "price": 249
+    },
+    {
+      "id": 13,
+      "name": "Chicken Hyderabadi Biryani - Half",
+      "category": "Biryani",
+      "price": 249
+    },
+    {
+      "id": 14,
+      "name": "Chicken Hyderabadi Biryani - Full",
+      "category": "Biryani",
+      "price": 449
+    },
+    {
+      "id": 15,
+      "name": "Chicken Tikka Biryani - Full",
+      "category": "Biryani",
+      "price": 449
+    },
+    {
+      "id": 16,
+      "name": "Chicken Tikka Biryani - Half",
+      "category": "Biryani",
+      "price": 249
+    },
+    {
+      "id": 17,
+      "name": "Duoza Special Biryani",
+      "category": "Biryani",
+      "price": 999
+    },
+    {
+      "id": 18,
+      "name": "Mutton Biryani - Full",
+      "category": "Biryani",
+      "price": 649
+    },
+    {
+      "id": 19,
+      "name": "Mutton Biryani - Half",
+      "category": "Biryani",
+      "price": 349
+    },
+    {
+      "id": 20,
+      "name": "Mutton Seekh Biryani (Single Portion)",
+      "category": "Biryani",
+      "price": 349
+    },
+    {
+      "id": 21,
+      "name": "Afghani Naan",
+      "category": "Breads",
+      "price": 90
+    },
+    {
+      "id": 22,
+      "name": "Butter Naan",
+      "category": "Breads",
+      "price": 70
+    },
+    {
+      "id": 23,
+      "name": "Butter Roti",
+      "category": "Breads",
+      "price": 25
+    },
+    {
+      "id": 24,
+      "name": "Garlic Naan",
+      "category": "Breads",
+      "price": 90
+    }
+  ],
+  "orders": [],
+  "next_order": 1001
+}
